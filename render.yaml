@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: app-review-scraper
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node api.js
+    envVars:
+      - key: SPREADSHEET_ID
+        value: ${SPREADSHEET_ID}
+      - key: SHEET_APPSTORE
+        value: ${SHEET_APPSTORE}
+      - key: SHEET_GOOGLEPLAY
+        value: ${SHEET_GOOGLEPLAY}
+      - key: GOOGLE_CREDENTIALS_PATH
+        value: ${GOOGLE_CREDENTIALS_PATH}
+      - key: PORT
+        value: 3000
+      - key: MAKE_WEBHOOK_URL
+        value: ${MAKE_WEBHOOK_URL}
