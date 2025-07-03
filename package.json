@@ -1,0 +1,28 @@
+{
+    "type": "module",
+    "name": "itunes-app-reviews-scraper",
+    "version": "1.0.0",
+    "description": "從 iTunes API 獲取應用程式 Bundle ID 並抓取 App Store 評論",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "app-store-scraper": "^0.18.0",
+        "axios": "^1.6.0",
+        "express": "^5.1.0",
+        "google-play-scraper": "^10.0.1",
+        "googleapis": "^150.0.1",
+        "node-fetch": "^3.3.2"
+    },
+    "keywords": [
+        "itunes",
+        "app-store",
+        "reviews",
+        "scraper",
+        "ios"
+    ],
+    "author": "",
+    "license": "MIT"
+}
